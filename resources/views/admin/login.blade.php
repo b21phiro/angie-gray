@@ -5,9 +5,7 @@
 <div id="login">
 
     <header class="login-header">
-        <div>
-            <span>Angie</span>
-        </div>
+        <x-logo />
     </header>
 
     <main>

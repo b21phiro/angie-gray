@@ -15,8 +15,15 @@
     color: var(--black);
     text-decoration: none;
     font-family: "Lato Bold", sans-serif;
+    gap: 1rem;
+    transition: background-color 200ms ease-out;
 }
 
 .navigation-item[aria-current="page"] {
+    background-color: var(--light-gray-2);
+}
+
+.navigation-item:hover,
+.navigation-item:focus {
     background-color: var(--gray);
 }

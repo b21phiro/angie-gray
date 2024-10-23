@@ -9,6 +9,7 @@
 }
 
 #admin > .main {
+    margin-top: 5.57rem;
     grid-area: main;
 }
 
