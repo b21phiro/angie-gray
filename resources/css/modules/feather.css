@@ -1,0 +1,9 @@
+.feather {
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: none;
+    stroke: var(--dark-gray);
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
