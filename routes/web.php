@@ -17,4 +17,5 @@ Route::get('/admin/logout', [\App\Http\Controllers\AdminController::class, "logo
 
 Route::get('/admin/login', [\App\Http\Controllers\AdminController::class, "login"])
     ->name("admin.login");
+
 Route::post('/admin/login', [\App\Http\Controllers\AdminController::class, "authenticate"]);

@@ -12,7 +12,7 @@
 
     <main>
 
-        <form id="login-form" method="POST" action="/admin/login">
+        <form id="login-form" method="POST" action="/angie-gray/public/admin/login">
 
             @csrf
 
@@ -20,6 +20,36 @@
                 <h1>Logga in</h1>
                 <p>Som inloggad kan du hantera din portfolio.</p>
             </section>
+
+            @if ($errors->any())
+
+                @if ($errors->has('invalid'))
+                    <div class="notice error">
+                        <x-icon.x-circle />
+                        <section class="notice-section">
+                            <h2>Sorry,</h2>
+                            <p>I could not find that account! Maybe it does not exist or is deleted?</p>
+                        </section>
+                    </div>
+                @elseif ($errors->has('email') || $errors->has('password'))
+                    <div class="notice warn">
+                        <x-icon.alert-circle />
+                        <section class="notice-section">
+                            <h2>Woopsie,</h2>
+                            <p>You must enter your email <i>and</i> the password to in order to log in!</p>
+                        </section>
+                    </div>
+                @else
+                    <div class="notice error">
+                        <x-icon.x-circle />
+                        <section class="notice-section">
+                            <h2>Oh no,</h2>
+                            <p>Something went wrong on my side, I'm so sorry... please try again later!</p>
+                        </section>
+                    </div>
+                @endif
+
+            @endif
 
             <fieldset>
 
@@ -37,7 +67,7 @@
 
             </fieldset>
 
-            <label for="submit" class="submit">
+            <label id="submitButton" for="submit" class="submit">
                 <span>Logga in</span>
                 <x-icon.arrow-right />
             </label>

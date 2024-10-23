@@ -16,17 +16,14 @@
     max-width: 42rem;
     margin-inline: auto;
     margin-block: 4rem;
-}
-
-#login-form section {
-    margin-block: 2rem;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 2rem;
 }
 
-#login-form section h1 {
+#login-form > section h1 {
     font-size: 3rem;
+    margin-bottom: 1rem;
 }
 
 #login-form fieldset {
@@ -61,11 +58,17 @@
     font-size: 1rem;
     letter-spacing: 1px;
     cursor: pointer;
-    transition: background-color 200ms ease-out;
+    transition: all 200ms ease-out;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: .5rem;
+    width: fit-content;
+}
+
+.disabled.submit {
+    opacity: .5;
+    cursor: not-allowed;
 }
 
 .submit .feather {
@@ -73,13 +76,13 @@
     transition: transform 200ms ease-out;
 }
 
-.submit:hover,
-.submit:focus-within {
+.submit:hover:not(.disabled),
+.submit:focus-within:not(.disabled) {
     background-color: var(--dark-gray);
 }
 
-.submit:hover .feather,
-.submit:focus .feather {
+.submit:hover:not(.disabled) .feather,
+.submit:focus:not(.disabled) .feather {
     transform: translateX(.25rem);
 }
 

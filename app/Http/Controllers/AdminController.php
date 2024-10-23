@@ -16,7 +16,11 @@ class AdminController extends Controller
 
     public function login(): View
     {
-        return view('admin.login');
+        return view('admin.login',
+            [
+            "title" => "Login | "
+            ]
+        );
     }
 
     public function logout(): RedirectResponse
@@ -33,9 +37,11 @@ class AdminController extends Controller
 
         if (!Auth::attempt($credentials))
         {
-            return back()->withErrors([
-                'email' => 'Invalid email or password'
-            ])->onlyInput('email');
+            return redirect()->back()->withErrors(
+                [
+                    'invalid' => 'Invalid email or password'
+                ]
+            );
         }
 
         $request->session()->regenerate();

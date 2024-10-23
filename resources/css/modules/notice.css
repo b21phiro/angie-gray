@@ -1,0 +1,24 @@
+.notice {
+    padding: 2rem;
+    border-radius: .5rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.notice.error {
+    background-color: var(--light-red);
+}
+
+.notice.warn {
+    background-color: var(--yellow);
+}
+
+.notice > .feather {
+    margin-top: .2rem;
+}
+
+.notice-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
