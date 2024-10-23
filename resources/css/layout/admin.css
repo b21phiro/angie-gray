@@ -1,0 +1,17 @@
+#admin {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: minmax(200px, 25vw) 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        'aside main';
+    gap: 2rem;
+}
+
+#admin > .main {
+    grid-area: main;
+}
+
+#admin .side-panel {
+    grid-area: aside;
+}

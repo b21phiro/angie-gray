@@ -1,0 +1,22 @@
+.navigation {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation-item {
+    min-height: 3rem;
+    padding-block: 2rem;
+    padding-inline: 2rem;
+    display: inline-flex;
+    align-items: center;
+    font-size: 1rem;
+    color: var(--black);
+    text-decoration: none;
+    font-family: "Lato Bold", sans-serif;
+}
+
+.navigation-item[aria-current="page"] {
+    background-color: var(--gray);
+}

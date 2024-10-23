@@ -1,0 +1,13 @@
+.avatar {
+    width: 3rem;
+    height: 3rem;
+    border: .0625rem solid var(--light-gray);
+    background-color: var(--white);
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.avatar image {
+    object-position: center center;
+    object-fit: cover;
+}

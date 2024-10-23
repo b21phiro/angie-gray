@@ -11,7 +11,13 @@ class AdminController extends Controller
 {
     public function dashboard(): View
     {
-        return view('admin.dashboard');
+        $user = Auth::user();
+        return view('admin.dashboard',
+            [
+                'title' => "Dashboard | ",
+                'user' => $user
+            ]
+        );
     }
 
     public function login(): View

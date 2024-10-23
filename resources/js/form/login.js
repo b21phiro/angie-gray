@@ -78,7 +78,7 @@ function toggleSubmitButton() {
 
 }
 
-function init() {
+export default function init() {
 
     form         = document.getElementById(FORM_ID);
     email        = document.getElementById(EMAIL_ID);
@@ -94,5 +94,3 @@ function init() {
     toggleSubmitButton();
 
 }
-
-export default { init };

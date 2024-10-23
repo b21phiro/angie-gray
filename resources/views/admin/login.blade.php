@@ -55,7 +55,7 @@
 
                 <div class="input">
                     <label class="input-label" for="email">Email</label>
-                    <input id="email" type="text" name="email" />
+                    <input id="email" type="email" name="email" />
                     <label for="email" class="input-error-text">Felaktig email</label>
                 </div>
 

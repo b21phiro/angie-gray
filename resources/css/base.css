@@ -1,8 +1,9 @@
 :root {
     --white: #FFF;
     --light-gray: #F2F2F2;
-    --gray: #4A4A4A;
-    --dark-gray: #0D0D0D;
+    --gray: #D2D2D2;
+    --dark-gray: #4A4A4A;
+    --darker-gray: #0D0D0D;
     --black: #000;
     --red: #D94032;
     --light-red: #FFB8B1;
@@ -18,7 +19,7 @@
 }
 
 html {
-    color: var(--dark-gray);
+    color: var(--darker-gray);
     font-family: "Lato Regular", sans-serif;
 }
 

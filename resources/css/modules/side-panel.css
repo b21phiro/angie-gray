@@ -1,0 +1,9 @@
+.side-panel {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--light-gray);
+}
+
+.side-panel > .content {
+    flex: 1;
+}

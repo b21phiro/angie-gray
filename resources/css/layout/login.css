@@ -40,15 +40,15 @@
     text-align: center;
     border-top: 1px solid var(--light-gray);
     font-size: .875rem;
-    color: var(--dark-gray);
+    color: var(--darker-gray);
 }
 
 .login-footer a {
-    color: var(--dark-gray);
+    color: var(--darker-gray);
 }
 
 .submit {
-    background-color: var(--gray);
+    background-color: var(--dark-gray);
     height: 3rem;
     padding-inline: 1.5rem;
     text-align: center;
@@ -78,7 +78,7 @@
 
 .submit:hover:not(.disabled),
 .submit:focus-within:not(.disabled) {
-    background-color: var(--dark-gray);
+    background-color: var(--darker-gray);
 }
 
 .submit:hover:not(.disabled) .feather,
