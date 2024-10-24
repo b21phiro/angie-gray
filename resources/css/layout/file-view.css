@@ -1,0 +1,54 @@
+#fileView {
+    display: flex;
+    flex-direction: column;
+    grid-area: fileView;
+    border-left: var(--border-width) solid var(--gray-1);
+}
+
+#closeFileViewButton {
+    padding-inline: 0;
+    margin: 2rem;
+}
+
+.file-view-info {
+    padding-inline: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.file-view-info p {
+    color: var(--gray-3);
+    font-size: .875rem;
+    display: inline-flex;
+    gap: 1em;
+}
+
+.file-operations {
+    padding-inline: 2rem;
+    margin-block: 2rem;
+    gap: 1rem;
+}
+
+.file-operation-button {
+    width: 6.6rem !important;
+    padding-inline: 0 !important;
+}
+
+.file-view-figure {
+    position: relative;
+    background-color: var(--beige-1);
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.file-view-figure img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center center;
+}

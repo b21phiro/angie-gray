@@ -2,8 +2,8 @@
     width: 1.5rem;
     height: 1.5rem;
     fill: none;
-    stroke: var(--dark-gray);
-    stroke-width: 2;
+    stroke: var(--text-on-main-color);
+    stroke-width: 1.333;
     stroke-linecap: round;
     stroke-linejoin: round;
 }

@@ -10,7 +10,7 @@
 
     <main>
 
-        <form id="login-form" method="POST" action="/angie-gray/public/admin/login">
+        <form id="login-form" method="POST" action="/admin/login">
 
             @csrf
 
@@ -65,7 +65,7 @@
 
             </fieldset>
 
-            <label id="submitButton" for="submit" class="submit">
+            <label id="submitButton" for="submit" class="button">
                 <span>Logga in</span>
                 <x-icon.arrow-right />
             </label>

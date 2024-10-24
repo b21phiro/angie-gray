@@ -1,0 +1,16 @@
+.centered-row,
+.row {
+    display: flex;
+}
+
+.centered-row {
+    align-items: center;
+}
+
+.no-style {
+    list-style: none;
+}
+
+.no-padding {
+    padding: 0;
+}

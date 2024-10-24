@@ -1,0 +1,41 @@
+.table {
+    border-collapse: collapse;
+}
+
+.table th {
+    text-align: left;
+}
+
+.table thead {
+    height: 3rem;
+}
+
+.table tbody tr {
+    height: 3rem;
+    padding: .5rem;
+    border-block: var(--border-width) solid var(--gray-1);
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.table tbody tr:hover {
+    background-color: var(--gray-2);
+}
+
+.table tbody tr figure {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    overflow: hidden;
+    border: var(--border-width) solid var(--gray-1);
+    border-radius: .25rem;
+}
+
+.table tbody tr figure img {
+    object-fit: cover;
+    object-position: center center;
+}
+
+.table tbody .centered-row {
+    gap: .5rem;
+}

@@ -16,14 +16,14 @@
     text-decoration: none;
     font-family: "Lato Bold", sans-serif;
     gap: 1rem;
-    transition: background-color 200ms ease-out;
+    transition: var(--transition);
 }
 
 .navigation-item[aria-current="page"] {
-    background-color: var(--light-gray-2);
+    background-color: var(--beige-3);
 }
 
 .navigation-item:hover,
 .navigation-item:focus {
-    background-color: var(--gray);
+    background-color: var(--beige-2);
 }

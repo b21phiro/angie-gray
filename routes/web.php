@@ -12,6 +12,14 @@ Route::get('/admin', [\App\Http\Controllers\AdminController::class, "dashboard"]
     ->name("admin.dashboard")
     ->middleware('auth');
 
+Route::get('/admin/media', [\App\Http\Controllers\AdminController::class, "media"])
+    ->name("admin.media")
+    ->middleware('auth');
+
+Route::post('/admin/media', [\App\Http\Controllers\AdminController::class, "uploadMedia"])
+    ->name("admin.media")
+    ->middleware('auth');
+
 Route::get('/admin/logout', [\App\Http\Controllers\AdminController::class, "logout"])
     ->name("admin.logout");
 

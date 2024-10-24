@@ -4,19 +4,19 @@
     </header>
     <div class="content">
         <nav class="navigation">
-            <a class="navigation-item" href="/angie-gray/public/admin" title="Dashboard">
+            <a class="navigation-item" href="/admin" title="Dashboard">
                 <x-icon.home />
                 <span>Dashboard</span>
             </a>
-            <a class="navigation-item" href="/angie-gray/public/biography" title="Biography">
+            <a class="navigation-item" href="/admin/biography" title="Biography">
                 <x-icon.feather />
                 <span>Biography</span>
             </a>
-            <a class="navigation-item" href="/angie-gray/public/portfolio" title="Portfolio">
+            <a class="navigation-item" href="/admin/portfolio" title="Portfolio">
                 <x-icon.briefcase />
                 <span>Portfolio</span>
             </a>
-            <a class="navigation-item" href="/angie-gray/public/media" title="Media">
+            <a class="navigation-item" href="/admin/media" title="Media">
                 <x-icon.image />
                 <span>Media</span>
             </a>
@@ -29,9 +29,9 @@
             </figure>
             <p class="name">{{ $user->getName() }}</p>
         </div>
-        <div class="button">
+        <div class="button-round">
             <x-icon.log-out />
-            <a href="/angie-gray/public/admin/logout" title="Log out"></a>
+            <a href="/admin/logout" title="Log out"></a>
         </div>
     </footer>
 </aside>

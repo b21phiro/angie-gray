@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\LoginFormRequest;
 use Illuminate\Http\RedirectResponse;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\View\View;
 
@@ -54,6 +55,22 @@ class AdminController extends Controller
 
         return redirect()->intended(route('admin.dashboard'));
 
+    }
+
+    public function media(): View
+    {
+        $user = Auth::user();
+        return view('admin.media',
+            [
+                'title' => "Media | ",
+                'user' => $user
+            ]
+        );
+    }
+
+    public function uploadMedia(Request $request): void
+    {
+        var_dump($request->post());
     }
 
 }

@@ -4,6 +4,8 @@
 
 @import "layout/login.css";
 @import "layout/admin.css";
+@import "layout/list.css";
+@import "layout/file-view.css";
 
 @import "modules/header.css";
 @import "modules/side-panel.css";
@@ -16,3 +18,5 @@
 @import "modules/button.css";
 @import "modules/user.css";
 @import "modules/avatar.css";
+@import "modules/table.css";
+@import "modules/text.css";

@@ -6,11 +6,11 @@
 }
 
 .notice.error {
-    background-color: var(--light-red);
+    background-color: var(--red);
 }
 
 .notice.warn {
-    background-color: var(--yellow);
+    background-color: var(--orange-1);
 }
 
 .notice > .feather {

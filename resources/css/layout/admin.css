@@ -1,18 +1,31 @@
-#admin {
-    min-height: 100vh;
+#admin,
+#media {
+    height: 100vh;
+    overflow-y: hidden;
     display: grid;
-    grid-template-columns: minmax(200px, 25vw) 1fr;
     grid-template-rows: 1fr;
+}
+
+#admin {
+    grid-template-columns: minmax(12.5rem, 16vw) 1fr;
     grid-template-areas:
         'aside main';
-    gap: 2rem;
 }
 
-#admin > .main {
-    margin-top: 5.57rem;
+#media {
+    grid-template-columns: minmax(12.5rem, 16vw) 1fr minmax(12.5rem, 24vw);
+    grid-template-areas:
+        'aside main fileView';
+}
+
+#admin > .main,
+#media > .main {
+    padding-top: 5.57rem;
     grid-area: main;
+    overflow-y: auto;
 }
 
-#admin .side-panel {
+#admin .side-panel,
+#media .side-panel{
     grid-area: aside;
 }

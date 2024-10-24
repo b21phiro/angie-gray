@@ -9,7 +9,7 @@
 .login-header {
     padding: 2rem;
     text-align: center;
-    border-bottom: 1px solid var(--light-gray);
+    border-bottom: var(--border-width) solid var(--gray-1);
 }
 
 #login-form {
@@ -38,32 +38,12 @@
 .login-footer {
     padding: 2rem;
     text-align: center;
-    border-top: 1px solid var(--light-gray);
+    border-top: var(--border-width) solid var(--gray-1);
     font-size: .875rem;
-    color: var(--darker-gray);
 }
 
 .login-footer a {
-    color: var(--darker-gray);
-}
-
-.submit {
-    background-color: var(--dark-gray);
-    height: 3rem;
-    padding-inline: 1.5rem;
-    text-align: center;
-    border-radius: .0625rem;
-    border: 0;
-    color: var(--white);
-    font-size: 1rem;
-    letter-spacing: 1px;
-    cursor: pointer;
-    transition: all 200ms ease-out;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: .5rem;
-    width: fit-content;
+    color: var(--gray-3);
 }
 
 .disabled.submit {
@@ -76,16 +56,6 @@
     transition: transform 200ms ease-out;
 }
 
-.submit:hover:not(.disabled),
-.submit:focus-within:not(.disabled) {
-    background-color: var(--darker-gray);
-}
-
-.submit:hover:not(.disabled) .feather,
-.submit:focus:not(.disabled) .feather {
-    transform: translateX(.25rem);
-}
-
 .input {
     display: flex;
     flex-direction: column;
@@ -95,7 +65,7 @@
     font-size: 1rem;
     height: 3rem;
     padding: .625rem;
-    border: 1px solid var(--gray);
+    border: var(--border-width) solid var(--gray-3);
     font-family: "Lato Regular", sans-serif;
 }
 
