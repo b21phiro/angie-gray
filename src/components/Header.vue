@@ -113,9 +113,13 @@
     background-color: var(--brown);
     width: 100%;
     height: 100%;
-    box-shadow: 0 0 1rem rgba(0,0,0,.08), .25rem .25rem 1rem rgba(0,0,0,.16);
     z-index: 999;
     transition: transform 300ms linear;
+  }
+
+  .mobile-menu.open {
+    transform: translateX(-100%);
+    box-shadow: 0 0 1rem rgba(0,0,0,.08), .25rem .25rem 1rem rgba(0,0,0,.16);
   }
 
   .mobile-menu--header {
@@ -124,10 +128,6 @@
     display: inline-flex;
     align-items: center;
     justify-content: end;
-  }
-
-  .mobile-menu.open {
-    transform: translateX(-100%);
   }
 
   .mobile-menu--nav {
