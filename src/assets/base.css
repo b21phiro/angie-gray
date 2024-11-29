@@ -1,0 +1,22 @@
+:root {
+
+    --dark-brown: #1F1D10;
+
+    --font-main: 'Lato';
+    --font-secondary: 'Libre Baskerville';
+
+}
+
+html {
+    color: var(--dark-brown);
+    font-family: var(--font-main), 'sans-serif';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-secondary);
+}

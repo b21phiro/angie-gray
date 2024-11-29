@@ -1,1 +1,10 @@
+@import "./fonts/Lato/lato.css";
+@import "./fonts/Libre_Baskerville/libre_baskerville.css";
+@import "./base.css";
 
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+}
