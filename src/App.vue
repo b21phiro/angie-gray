@@ -4,6 +4,20 @@
 </script>
 
 <template>
-  <Header />
-  <RouterView />
+  <div class="app">
+    <Header />
+    <RouterView />
+  </div>
 </template>
+
+<style>
+  .app {
+
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 2rem;
+  }
+</style>

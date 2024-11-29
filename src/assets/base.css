@@ -1,13 +1,19 @@
 :root {
 
+    --beige: #FEFAF6;
+    --brown: #C5BDB5;
     --dark-brown: #1F1D10;
 
     --font-main: 'Lato';
     --font-secondary: 'Libre Baskerville';
+    --font-secondary-bold: 'Libre Baskerville Bold';
+
+    --site-max-width: 90rem;
 
 }
 
 html {
+    background-color: var(--beige);
     color: var(--dark-brown);
     font-family: var(--font-main), 'sans-serif';
 }
@@ -18,5 +24,5 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: var(--font-secondary);
+    font-family: var(--font-secondary), sans-serif;
 }
