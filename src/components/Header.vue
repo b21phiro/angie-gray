@@ -101,6 +101,8 @@
     font-size: 1rem;
     cursor: pointer;
     opacity: .72;
+    color: var(--dark-brown);
+    font-family: var(--font-main-bold), sans-serif;
   }
 
   /** Mobile menu */
@@ -113,7 +115,7 @@
     height: 100%;
     box-shadow: 0 0 1rem rgba(0,0,0,.08), .25rem .25rem 1rem rgba(0,0,0,.16);
     z-index: 999;
-    transition: transform 150ms linear;
+    transition: transform 300ms linear;
   }
 
   .mobile-menu--header {
@@ -133,6 +135,15 @@
     flex-direction: column;
     margin: 2rem 1rem;
     gap: 2rem;
+    opacity: 0;
+    transition: all 300ms linear;
+    transition-delay: 300ms;
+    transform: translateX(1rem);
+  }
+
+  .mobile-menu.open .mobile-menu--nav {
+    opacity: 1;
+    transform: translateX(0);
   }
 
   .mobile-menu--nav--link {
