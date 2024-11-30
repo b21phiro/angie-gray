@@ -1,0 +1,26 @@
+.input {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.input--label {
+    font-size: 1rem;
+    font-family: var(--font-main-bold), sans-serif;
+    color: var(--brown-2);
+}
+
+.input--value {
+    min-height: 3rem;
+    padding: .625rem;
+    font-size: 1rem;
+    border: .0625rem solid var(--brown);
+}
+
+.input--value:focus {
+    border-color: var(--dark-brown);
+}
+
+.input--info {
+    font-size: .875rem;
+}

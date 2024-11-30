@@ -28,26 +28,18 @@
 </script>
 
 <template>
-  <main class="app--main">
-    <section class="carousel">
-      <ul class="carousel--list">
-        <li v-for="image in images" :key="image.id">
-          <figure class="carousel--list--item--figure">
-            <img class="carousel--list--item--figure--image" :src="image" alt="Example 1" />
-          </figure>
-        </li>
-      </ul>
-    </section>
-  </main>
+  <section class="carousel">
+    <ul class="carousel--list">
+      <li v-for="image in images" :key="image.id">
+        <figure class="carousel--list--item--figure">
+          <img class="carousel--list--item--figure--image" :src="image" alt="Example 1" />
+        </figure>
+      </li>
+    </ul>
+  </section>
 </template>
 
 <style>
-
-  .app--main {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-  }
 
   .carousel {
     width: 100vw;

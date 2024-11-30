@@ -7,7 +7,9 @@
 <template>
   <div class="app">
     <Header />
-    <RouterView />
+    <main class="app--main">
+      <RouterView />
+    </main>
     <Footer />
   </div>
 </template>
@@ -19,5 +21,11 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
+  }
+
+  .app--main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
   }
 </style>
