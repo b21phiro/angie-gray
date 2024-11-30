@@ -1,7 +1,7 @@
 <script setup>
-    import MenuFeatherSvg from '@/assets/images/menu.svg';
-    import XFeatherSvg from '@/assets/images/x.svg';
-    import ChevronRightLargeSvg from '@/assets/images/chevron-right-large.svg';
+    import MenuFeatherSvg from '@/assets/images/svg/menu.svg';
+    import XFeatherSvg from '@/assets/images/svg/x.svg';
+    import ChevronRightLargeSvg from '@/assets/images/svg/chevron-right-large.svg';
     import {ref} from "vue";
     import { navigation } from "@/lib/Navigation.js";
 

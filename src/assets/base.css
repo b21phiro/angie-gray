@@ -6,8 +6,10 @@
 
     --font-main: 'Lato';
     --font-main-bold: 'Lato Bold';
+    --font-main-italic: 'Lato Italic';
     --font-secondary: 'Libre Baskerville';
     --font-secondary-bold: 'Libre Baskerville Bold';
+    --font-secondary-italic: 'Libre Baskerville Italic';
 
     --site-max-width: 90rem;
 
