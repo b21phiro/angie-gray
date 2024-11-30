@@ -106,4 +106,16 @@
     height: 1rem;
   }
 
+  /** Breakpoints */
+
+  @media (min-width: 42rem) {
+    .app--footer {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      max-width: var(--site-max-width);
+      margin-inline: auto;
+      width: 100%;
+    }
+  }
+
 </style>
