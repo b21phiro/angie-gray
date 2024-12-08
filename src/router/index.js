@@ -21,6 +21,11 @@ const router = createRouter({
       component: () => import('../views/ContactView.vue'),
     },
     {
+      path: '/photography/:id',
+      name: 'photography.id',
+      component: () => import('../views/PhotographyView.vue'),
+    },
+    {
       path: '/:pathMatch(.*)*',
       name: 'NotFound',
       component: NotFoundView
