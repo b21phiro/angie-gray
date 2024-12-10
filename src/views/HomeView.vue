@@ -21,7 +21,7 @@
     <ul ref="carousel" @wheel="onScroll" class="carousel--ul">
       <li class="carousel--ul--li" v-for="photograph in photographs" :key="photograph.id">
         <picture class="carousel--ul--li--figure" :style="`aspect-ratio:${ photograph.photos[0].aspect() };`">
-          <router-link class="carousel--ul--li--figure--link" :to="photograph.href" title="See photograph"></router-link>
+          <router-link class="carousel--ul--li--figure--link" :to="'/photography/'+photograph.getDocumentId()" title="See photograph"></router-link>
           <source :srcset="photograph.photos[0].images.get('thumbnail').src"
                   :media="`(max-width: ${photograph.photos[0].images.get('thumbnail').width}px)`"
           />
@@ -54,7 +54,6 @@
     display: flex;
     gap: 1rem;
     width: 100%;
-    height: 56vh;
     overflow-x: auto;
     overflow-y: hidden;
     padding: 0 1rem;
@@ -62,24 +61,26 @@
 
   .carousel--ul--li {
     list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .carousel--ul--li--figure {
     position: relative;
     display: flex;
-    height: 100%;
-    background-color: var(--brown);
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
   }
 
   .carousel--ul--li--figure--img {
-    position: absolute;
-    display: block;
-    width: 100%;
+    max-width: 100vw;
+    min-height: 48vh;
+    max-height: 56vh;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center center;
-    transition: transform 500ms ease-in-out;
   }
 
   .carousel--ul--li--figure:hover .carousel--ul--li--figure--img,
