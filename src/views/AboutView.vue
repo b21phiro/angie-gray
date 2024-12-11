@@ -24,7 +24,7 @@ import Biography from "@/models/Biography.js";
 <style>
   .biography {
     padding: 1rem;
-    max-width: 46rem;
+    max-width: 48rem;
     width: 100%;
     display: flex;
     flex-direction: column;
