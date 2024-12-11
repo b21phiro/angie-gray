@@ -3,20 +3,43 @@
   import Email from "@/components/inputs/Email.vue";
   import Name from "@/components/inputs/Name.vue";
   import Text from "@/components/inputs/Text.vue";
+  import {ref} from "vue";
+
+  const form = ref({});
+
+  const email = ref({});
+  const name = ref({});
+  const message = ref({});
+
+  async function submit(ev) {
+    ev.preventDefault();
+
+    const { error: invalidEmail } = email.value;
+    const { error: invalidName } = name.value;
+    const { error: invalidMessage } = message.value;
+
+    if (invalidEmail || invalidName || invalidMessage) {
+      return;
+    }
+
+    alert("Submit!");
+
+  }
+
 </script>
 
 <template>
-  <form class="form" method="POST">
+  <form ref="form" @submit="submit" class="form" method="POST">
 
     <section class="form--section">
-      <h1 class="form--section--title">Get in touch</h1>
+      <h1>Get in touch</h1>
       <p>You can contact me via email. I will respond as soon as possible!</p>
     </section>
 
     <fieldset class="form--fieldset" aria-label="Email">
-      <Name />
-      <Email />
-      <Text />
+      <Name ref="name" />
+      <Email ref="email" />
+      <Text ref="message" />
     </fieldset>
 
     <label class="form--submit">
@@ -51,11 +74,7 @@
   .form--section {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-  }
-
-  .form--section--title {
-    font-size: 2rem;
+    gap: clamp(1rem, 4.5vw, 2rem);
   }
 
   .form--submit {

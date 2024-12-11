@@ -2,35 +2,39 @@
   import './input.css';
   import { ref } from "vue";
 
-  const emailRegExp = new RegExp(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/);
-  const error = ref(false);
+  const firstTime = ref(true);
+  const error = ref(true);
+  const input = ref();
 
-  function onBlur(ev) {
-    const { target: input } = ev;
-    validate(input);
+  function validate() {
+    const { value } = input.value;
+    error.value = !/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/i.test(value);
   }
 
-  function validate(input) {
-    error.value = !!emailRegExp.test(input.value);
-    return error.value;
+  function onInput() {
+    firstTime.value = false;
+    if (error.value) { validate(); }
   }
 
   defineExpose({
-    error,
-    validate
+    error
   });
 
 </script>
 
 <template>
-  <div class="input">
+  <div :class="`${(error && !firstTime) ? 'error' : ''} input`">
     <label class="input--label" for="email">Your email</label>
-    <input @blur="onBlur"
+    <input ref="input"
+           @blur="validate"
+           @input="onInput"
            class="input--value"
            id="email"
            type="text"
            name="email"
     />
-    <label v-if="!error" class="input--info" for="email">Enter a valid email address.</label>
+    <label v-if="error && !firstTime" :class="`error input--label--small`" for="email">
+      Enter a valid email address.
+    </label>
   </div>
 </template>

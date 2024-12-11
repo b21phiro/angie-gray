@@ -14,13 +14,29 @@
     min-height: 3rem;
     padding: .625rem;
     font-size: 1rem;
+    font-family: var(--font-main), sans-serif;
     border: .0625rem solid var(--brown);
+}
+
+.error .input--value {
+    border-color: var(--danger);
 }
 
 .input--value:focus {
     border-color: var(--dark-brown);
 }
 
-.input--info {
+.input--label--small {
     font-size: .875rem;
+    font-family: var(--font-main-italic), sans-serif;
+    letter-spacing: 0.03125rem;
+}
+
+.error.input--label--small {
+    color: var(--danger);
+}
+
+.error.input--label--small::before {
+    content: "* ";
+    font-family: var(--font-main-italic), sans-serif;
 }
