@@ -20,6 +20,13 @@
     error
   });
 
+  defineProps({
+    disabled: {
+      type: Boolean,
+      default: false,
+    }
+  });
+
 </script>
 
 <template>
@@ -32,6 +39,7 @@
            id="email"
            type="text"
            name="email"
+           :disabled="disabled"
     />
     <label v-if="error && !firstTime" :class="`error input--label--small`" for="email">
       Enter a valid email address.

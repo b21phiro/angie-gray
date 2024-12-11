@@ -18,12 +18,26 @@
 
   defineExpose({ error });
 
+  defineProps({
+    disabled: {
+      type: Boolean,
+      default: false,
+    }
+  });
 </script>
 
 <template>
   <div :class="`${(error && !firstTime) ? 'error' : ''} input`">
     <label class="input--label" for="name">Your name</label>
-    <input @input="onInput" @blur="validate" ref="input" class="input--value" id="name" type="text" name="name" />
+    <input @input="onInput"
+           @blur="validate"
+           ref="input"
+           class="input--value"
+           id="name"
+           type="text"
+           name="name"
+           :disabled="disabled"
+    />
     <label v-if="error && !firstTime" :class="`error input--label--small`" for="name">
       Please enter your name.
     </label>

@@ -33,6 +33,13 @@
 
   defineExpose({ error });
 
+  defineProps({
+    disabled: {
+      type: Boolean,
+      default: false,
+    }
+  });
+
 </script>
 
 <template>
@@ -40,6 +47,7 @@
     <label class="input--label" for="message">Your message</label>
     <textarea @input="onInput"
               @blur="validate"
+              :disabled="disabled"
               ref="input" class="input--value" id="message" name="message" rows="5"></textarea>
     <label v-if="error && !firstTime" :class="`error input--label--small`" for="message">
       {{ errorMessage }}
