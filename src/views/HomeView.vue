@@ -81,6 +81,7 @@
     height: 100%;
     object-fit: contain;
     object-position: center center;
+    transition: transform 200ms ease-in-out;
   }
 
   .carousel--ul--li--figure:hover .carousel--ul--li--figure--img,
