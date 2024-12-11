@@ -47,7 +47,7 @@
 
 <style scoped>
   .app--footer {
-    padding: 2rem 1rem;
+    padding: 2rem clamp(1rem, 4.5vw, 2rem);
     display: flex;
     flex-direction: column;
     align-items: center;

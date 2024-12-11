@@ -50,7 +50,7 @@
     display: flex;
     flex-direction: column;
     gap: clamp(2rem, 4.5vw, 4rem);
-    padding: 1rem;
+    padding: clamp(1rem, 4.5vw, 2rem);
   }
 
   .photography--title {

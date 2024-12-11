@@ -52,11 +52,11 @@
 
   .carousel--ul {
     display: flex;
-    gap: 1rem;
+    gap: clamp(1rem, 4.5vw, 2rem);
     width: 100%;
     overflow-x: auto;
     overflow-y: hidden;
-    padding: 0 1rem;
+    padding: 0 clamp(1rem, 4.5vw, 2rem);
   }
 
   .carousel--ul--li {

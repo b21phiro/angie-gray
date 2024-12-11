@@ -69,7 +69,7 @@
 <style scoped>
   .app-header {
     position: relative;
-    padding: 2rem 1rem;
+    padding: 2rem clamp(1rem, 4.5vw, 2rem);
     display: flex;
     align-items: center;
     justify-content: space-between;
