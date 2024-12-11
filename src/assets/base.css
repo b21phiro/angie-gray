@@ -32,3 +32,68 @@ h5,
 h6 {
     font-family: var(--font-secondary), sans-serif;
 }
+
+h1 {
+    font-size: clamp(2rem, 4.5vw, 3rem);
+    letter-spacing: 0.0625rem;
+}
+
+h2 {
+    font-size: clamp(1.5rem, 4.5vw, 2rem);
+    letter-spacing: 0.03125rem;
+}
+
+h3 {
+    font-size: clamp(1.25rem, 4.5vw, 1.5rem);
+}
+
+h4 {
+    font-size: clamp(1rem, 4.5vw, 1.1875rem);
+}
+
+h5 {
+    font-size: clamp(.875rem, 4.5vw, 1rem);
+    letter-spacing: 0.03125rem;
+}
+
+h6 {
+    font-size: clamp(.72rem, 4.5vw, .875rem);
+    letter-spacing: 0.03125rem;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+pre {
+    font-family: 'Consolas', monospace;
+    font-size: .875rem;
+    line-height: 1.5;
+    padding: 1rem;
+    background-color: #1F1D10;
+    color: var(--beige);
+}
+
+blockquote {
+    padding: clamp(1rem, 4.5vw, 2rem);
+    font-family: var(--font-secondary-italic), sans-serif;
+    font-size: clamp(1rem, 4.5vw, 1.1875rem);
+    line-height: 1.7;
+    text-align: center;
+}
+
+blockquote p {
+    text-align: center;
+}
+
+ul,
+ol {
+    line-height: 1.7;
+}
+
+img {
+    display: block;
+    width: 100%;
+}

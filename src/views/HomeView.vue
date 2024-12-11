@@ -78,6 +78,7 @@
     max-width: 100vw;
     min-height: 48vh;
     max-height: 56vh;
+    width: auto;
     height: 100%;
     object-fit: contain;
     object-position: center center;

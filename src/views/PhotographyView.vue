@@ -54,8 +54,6 @@
   }
 
   .photography--title {
-    font-size: clamp(2rem, 4.5vw, 3rem);
-    line-height: 1.5;
     text-align: center;
   }
 

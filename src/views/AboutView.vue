@@ -16,7 +16,7 @@ import Biography from "@/models/Biography.js";
 
 <template>
   <section class="biography">
-    <h1 class="biography--title">{{ title }}</h1>
+    <h1>{{ title }}</h1>
     <article class="biography--content" v-html="content"></article>
   </section>
 </template>
@@ -32,29 +32,10 @@ import Biography from "@/models/Biography.js";
     margin: 0 auto;
   }
 
-  .biography--title {
-    font-size: clamp(2rem, 4.5vw, 3rem);
-    line-height: 1.7;
-  }
-
   .biography--content {
     display: flex;
     flex-direction: column;
     gap: clamp(1rem, 4.5vw, 2rem);
-  }
-
-  .biography--content p {
-    font-size: 1rem;
-    text-align: justify;
-    line-height: 1.7;
-  }
-
-  .biography--content img {
-    width: 100%;
-    display: block;
-    max-height: 100vh;
-    object-fit: contain;
-    object-position: center center;
   }
 
 </style>

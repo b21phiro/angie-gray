@@ -26,6 +26,11 @@ const router = createRouter({
       component: () => import('../views/PhotographyView.vue'),
     },
     {
+      path: '/_markdown',
+      name: 'markdown',
+      component: () => import('../views/MarkdownView.vue'),
+    },
+    {
       path: '/:pathMatch(.*)*',
       name: 'NotFound',
       component: NotFoundView
