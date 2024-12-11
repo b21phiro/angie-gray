@@ -56,7 +56,7 @@
             :to="nav.to"
             :title="nav.title">
           <span>{{ nav.text }}</span>
-          <img :src="ChevronRightLargeSvg" alt="Go to" />
+          <img class="mobile-menu--nav--link--icon" :src="ChevronRightLargeSvg" alt="Go to" />
         </router-link>
 
       </nav>
@@ -189,6 +189,11 @@
   .menu-button:focus-within {
     opacity: 1;
     transition: opacity 150ms linear;
+  }
+
+  .mobile-menu--nav--link--icon {
+    width: 2rem;
+    height: 2rem;
   }
 
   /** Breakpoints */
